@@ -1,6 +1,13 @@
 # typescript
-npm install  #after initial pull
 
-#######################################
-tsc <filename>.ts #to compile the typescript file
-eg: tsc app.ts #this command will generate app.js
+#after pull
+
+npm install
+
+#to compile the typescript file
+
+#this command will generate app.js
+
+tsc filename.ts
+  
+eg: tsc app.ts
