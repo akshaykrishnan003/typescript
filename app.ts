@@ -1,5 +1,27 @@
 /* 
 ########################################################################################
+Arrays
+########################################################################################
+ */
+
+const personTwo = {
+  name: "Tom",
+  age: 15,
+  hobbies: ["Sports", "Cooking"],
+};
+
+// let favoriteActivitiesOne: any[]; can have a array of any type
+let favoriteActivitiesOne: string[];
+favoriteActivitiesOne = ["sports"];
+// favoriteActivitiesOne = ["sports", 1]; ** will give error
+
+console.log(personTwo.name);
+
+for (const hobby of personTwo.hobbies) {
+  console.log(hobby.toUpperCase()); //since hobby is string as we set it in the object
+}
+/* 
+########################################################################################
 Objects
 ########################################################################################
  */
