@@ -1,5 +1,34 @@
 /* 
 ########################################################################################
+Tuple
+########################################################################################
+ */
+const personThree: {
+  name: string;
+  age: number;
+  hobbies: string[];
+  role: [number, string];
+  // *tuple* role will have fixed size of two, first value will be number and second one will be string
+} = {
+  name: "Tom",
+  age: 15,
+  hobbies: ["Sports", "Cooking"],
+  role: [2, "author"],
+};
+
+/* this will messup role if
+const personThree = {
+    name: "Tom",
+    age: 15,
+    hobbies: ["Sports", "Cooking"],
+    role: [2, "author"],
+  };
+personThree.role[1] = 10; !!! Error !!!
+ */
+// personThree.role.push("admin"); push will mess up tuple
+
+/* 
+########################################################################################
 Arrays
 ########################################################################################
  */
