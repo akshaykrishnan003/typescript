@@ -1,5 +1,27 @@
 /* 
 ########################################################################################
+Union Types
+########################################################################################
+ */
+//run time types check are not always needed
+
+function combineOne(inputOne: number | string, inputTwo: number | string) {
+  let result;
+  if (typeof inputOne === "number" && typeof inputTwo === "number") {
+    result = inputOne + inputTwo;
+  } else {
+    result = inputOne.toString() + inputTwo.toString();
+  }
+  return result;
+}
+
+const combinedNumbersOne = combineOne(30, 26);
+console.log(combinedNumbersOne);
+
+const combinedNamesOne = combineOne("Max", "Anna");
+console.log(combinedNamesOne);
+/* 
+########################################################################################
 Any Type
 ########################################################################################
  */
